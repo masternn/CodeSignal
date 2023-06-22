@@ -42,7 +42,6 @@ func solution(carDimensions []int, parkingLot [][]int, luckySpot []int) bool {
 
 	for y = beginY; y <= endY; y++ {
 		for x = beginX; x <= endX; x++ {
-			//Are we inside luckySpot and it's occupied ?
 			if (x >= x1 && x <= x2) && (y >= y1 && y <= y2) {
 				if parkingLot[x][y] == 1 {
 					return false
